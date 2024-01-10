@@ -1,8 +1,28 @@
-# React + Vite
+# 🚀 My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! 🌟 This project showcases my skills as a web developer, featuring projects I've worked on and the technologies I'm familiar with.
 
-Currently, two official plugins are available:
+## 📝 Note
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is currently under development and has not been completed yet. Feel free to explore, but be aware that certain features may be incomplete or subject to change.
+
+## 🛠️ Tech Stack
+
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [EmailJS](https://www.emailjs.com/)
+
+## 🌐 Live Demo
+
+Check out the live demo of my portfolio [here](https://www.luliu.dev/).
+
+## 🌟 Features
+
+- Project Showcase: Display your web development projects with descriptions and links.
+
+- Skills Section: Highlight your skills and technologies you are proficient in.
+
+- Interactive Animations: Utilize Framer Motion for engaging and interactive animations.
+
+- Contact Form: Implement a contact form using EmailJS to receive messages from visitors.
