@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import "../sidebar.scss";
 
 const variants = {
   open: {
@@ -14,7 +13,6 @@ const variants = {
     },
   },
 };
-
 const itemVariants = {
   open: {
     y: 0,
@@ -25,19 +23,21 @@ const itemVariants = {
     opacity: 0,
   },
 };
+
 const Links = () => {
-  const links = ["Homepage", "Services", "Projects", "Contact", "About"];
+  const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
+
   return (
     <motion.div className="links" variants={variants}>
-      {links.map((link) => (
+      {items.map((item) => (
         <motion.a
-          href={`#${link}`}
-          key={link}
+          href={`#${item}`}
+          key={item}
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
-          {link}
+          {item}
         </motion.a>
       ))}
     </motion.div>

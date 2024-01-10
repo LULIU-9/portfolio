@@ -47,15 +47,15 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>LU LIU</motion.h2>
+          <motion.h2 variants={textVariants}>Lu Liu</motion.h2>
           <motion.h1 variants={textVariants}>
-            Full stack web developer
+            Front End and Full Stack developer
           </motion.h1>
-          <motion.div className="buttons" variants={textVariants}>
+          <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
               See the Latest Works
             </motion.button>
-            <motion.button variants={textVariants}>Contact me</motion.button>
+            <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -65,7 +65,6 @@ const Hero = () => {
           />
         </motion.div>
       </div>
-
       <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
@@ -74,8 +73,9 @@ const Hero = () => {
       >
         Writer Content Creator Influencer
       </motion.div>
-
-      <div className="imgContainer">{/* <img src="/hero.png" alt="" /> */}</div>
+      <div className="imageContainer">
+        <img src="/avatar.png" alt="" />
+      </div>
     </div>
   );
 };

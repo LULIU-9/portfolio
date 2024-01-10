@@ -39,13 +39,13 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section>
+    <section >
       <div className="container">
         <div className="wrapper">
-          <div className="imgContainer" ref={ref}>
+          <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div style={{ y }} className="textContainer">
+          <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <button>See Demo</button>
@@ -58,12 +58,16 @@ const Single = ({ item }) => {
 
 const Portfolio = () => {
   const ref = useRef();
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["end end", "start start"],
   });
 
-  const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+  });
 
   return (
     <div className="portfolio" ref={ref}>
