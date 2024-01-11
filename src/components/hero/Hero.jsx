@@ -1,5 +1,8 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
+import { LuDownload } from "react-icons/lu";
+
+const videoUrl = "/public/EmojiMovie.MOV?url";
 
 const textVariants = {
   initial: {
@@ -38,6 +41,20 @@ const sliderVariants = {
 };
 
 const Hero = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+
+    link.href = "/LuLiu_CV.pdf";
+
+    link.download = "LuLiu_CV.pdf";
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="hero">
       <div className="wrapper">
@@ -47,22 +64,40 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>Lu Liu</motion.h2>
+          <motion.h2 variants={textVariants}>
+            <span>
+              <motion.div
+                animate={{ rotate: [0, 30, 0] }} // 角度动画
+                transition={{ duration: 1, repeat: Infinity }} // 动画配置
+                style={{ fontSize: "1rem", marginRight: "0.2rem" }} // 调整字体大小
+              >
+                👋
+              </motion.div>
+              Hi I&apos;m
+            </span>
+            Lu Liu
+          </motion.h2>
           <motion.h1 variants={textVariants}>
             Front End and Full Stack developer
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
+            <a href="#Portfolio">
+              <motion.button variants={textVariants}>
+                See the Latest Works
+              </motion.button>
+            </a>
+            <motion.button variants={textVariants} onClick={handleDownload}>
+              Download My CV <LuDownload />
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
-          <motion.img
-            variants={textVariants}
-            animate="scrollButton"
-            src="/scroll.png"
-            alt=""
-          />
+          <a href="#Services">
+            <motion.img
+              variants={textVariants}
+              animate="scrollButton"
+              src="/scroll.png"
+              alt=""
+            />
+          </a>
         </motion.div>
       </div>
       <motion.div
@@ -73,9 +108,17 @@ const Hero = () => {
       >
         Writer Content Creator Influencer
       </motion.div>
-      <div className="imageContainer">
-        <img src="/avatar.png" alt="" />
-      </div>
+
+      <motion.div
+        className="imageContainer"
+        variants={textVariants}
+        initial="initial"
+        animate="animate"
+      >
+        <video autoPlay muted>
+          <source src={videoUrl} type="video/mp4"></source>
+        </video>
+      </motion.div>
     </div>
   );
 };
