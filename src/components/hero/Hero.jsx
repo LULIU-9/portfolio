@@ -107,7 +107,7 @@ const Hero = () => {
         Writer Content Creator Influencer
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         className="imageContainer"
         variants={textVariants}
         initial="initial"
@@ -116,7 +116,7 @@ const Hero = () => {
         <video autoPlay muted>
           <source src="/EmojiMovie.MOV" type="video/mp4"></source>
         </video>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };
