@@ -2,8 +2,6 @@ import "./hero.scss";
 import { motion } from "framer-motion";
 import { LuDownload } from "react-icons/lu";
 
-const videoUrl = "/public/EmojiMovie.MOV?url";
-
 const textVariants = {
   initial: {
     x: -500,
@@ -116,7 +114,7 @@ const Hero = () => {
         animate="animate"
       >
         <video autoPlay muted>
-          <source src={videoUrl} type="video/mp4"></source>
+          <source src="/EmojiMovie.MOV" type="video/mp4"></source>
         </video>
       </motion.div>
     </div>
