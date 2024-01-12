@@ -75,15 +75,14 @@ const AboutMe = () => {
           strong foundation in front-end technologies. I specialize in turning
           ideas into interactive and user-friendly websites.
         </p>
-        {/* <br /> */}
-        {/* <p>
+        <br />
+        <p>
           Holding a degree in <b>Bachelor of Computer Science</b> from the
           University of Queensland, my primary focus is on front-end
           development, particularly using technologies like <span>React</span>.
           I also have experience with back-end technologies such as{" "}
           <span>Node.js</span>, adding versatility to my skill set.
-        </p> */}
-
+        </p>
         <br />
         <p>
           Get to know more my{" "}
@@ -113,7 +112,6 @@ const AboutMe = () => {
           ))}
         </ul>
       </div>
-      <div className="stars"></div>
     </div>
   );
 };

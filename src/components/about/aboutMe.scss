@@ -10,6 +10,7 @@
     margin: auto;
     padding: 150px;
     background: linear-gradient(180deg, #111132, #0c0c1d);
+    overflow: hidden;
 
     @include mobile {
         flex-direction: column;
