@@ -88,7 +88,7 @@ const Hero = () => {
               Download My CV <LuDownload />
             </motion.button>
           </motion.div>
-          <a href="#Services">
+          <a href="#About">
             <motion.img
               variants={textVariants}
               animate="scrollButton"

@@ -1,7 +1,11 @@
 @import "../../app.scss";
 
 .navbar {
+
+  position: fixed;
   height: 100px;
+  z-index: 1;
+  width: 100%;
 
   .wrapper {
     max-width: 1366px;

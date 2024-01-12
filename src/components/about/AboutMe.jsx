@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {
   FaAws,
   FaBootstrap,
@@ -15,25 +16,23 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import { animate, motion, useScroll, useTransform } from "framer-motion";
 import "./aboutMe.scss";
-import { useRef } from "react";
 
 const skills = [
-  { name: "React", icon: <FaReact size={50} /> },
-  { name: "Next.js", icon: <TbBrandNextjs size={50} /> },
-  { name: "Node.js", icon: <FaNodeJs size={50} /> },
-  { name: "TypeScript", icon: <SiTypescript size={50} /> },
-  { name: "ES6", icon: <SiJavascript size={50} /> },
-  { name: "Sass", icon: <FaSass size={50} /> },
-  { name: "Tailwind", icon: <SiTailwindcss size={50} /> },
-  { name: "Bootstrap", icon: <FaBootstrap size={50} /> },
-  { name: "CSS3", icon: <FaCss3Alt size={50} /> },
-  { name: "Styled Component", icon: <SiStyledcomponents size={50} /> },
-  { name: "MySql", icon: <SiMysql size={50} /> },
-  { name: "Git", icon: <FaGitAlt size={50} /> },
-  { name: "HTML5", icon: <FaHtml5 size={50} /> },
-  { name: "AWS", icon: <FaAws size={50} /> },
+  { name: "React", icon: <FaReact /> },
+  { name: "Next.js", icon: <TbBrandNextjs /> },
+  { name: "Node.js", icon: <FaNodeJs /> },
+  { name: "TypeScript", icon: <SiTypescript /> },
+  { name: "ES6", icon: <SiJavascript /> },
+  { name: "Sass", icon: <FaSass /> },
+  { name: "Tailwind", icon: <SiTailwindcss /> },
+  { name: "Bootstrap", icon: <FaBootstrap /> },
+  { name: "CSS3", icon: <FaCss3Alt /> },
+  { name: "MySql", icon: <SiMysql /> },
+  { name: "Git", icon: <FaGitAlt /> },
+  { name: "HTML5", icon: <FaHtml5 /> },
+  { name: "AWS", icon: <FaAws /> },
+  { name: "Styled Component", icon: <SiStyledcomponents /> },
 ];
 
 const fadeInAnimationVariants = {
@@ -76,14 +75,14 @@ const AboutMe = () => {
           strong foundation in front-end technologies. I specialize in turning
           ideas into interactive and user-friendly websites.
         </p>
-        <br />
-        <p>
+        {/* <br /> */}
+        {/* <p>
           Holding a degree in <b>Bachelor of Computer Science</b> from the
           University of Queensland, my primary focus is on front-end
           development, particularly using technologies like <span>React</span>.
           I also have experience with back-end technologies such as{" "}
           <span>Node.js</span>, adding versatility to my skill set.
-        </p>
+        </p> */}
 
         <br />
         <p>
