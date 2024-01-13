@@ -62,28 +62,30 @@ const variants = {
 
 const Skills = () => {
   return (
-    <div className="skillsContainer">
-      <motion.h1 variants={variants} initial="initial" whileInView="animate">
-        Skills
-      </motion.h1>
+    <div className="skills">
+      <div className="wrapper">
+        <motion.h1 variants={variants} initial="initial" whileInView="animate">
+          Skills
+        </motion.h1>
 
-      <ul>
-        {skills.map((skill, index) => (
-          <motion.li
-            key={skill.name}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
-          >
-            {skill.icon}
-            <span>{skill.name}</span>
-          </motion.li>
-        ))}
-      </ul>
+        <ul>
+          {skills.map((skill, index) => (
+            <motion.li
+              key={skill.name}
+              variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              custom={index}
+            >
+              {skill.icon}
+              <span>{skill.name}</span>
+            </motion.li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
