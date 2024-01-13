@@ -37,7 +37,7 @@ const AboutMe = () => {
         </p>
         <br />
         <p>
-          Get to know more my{" "}
+          Get to know more from my{" "}
           <a href="https://www.linkedin.com/in/lu-liu-232983199">Linkedin</a>
         </p>
       </motion.div>

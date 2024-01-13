@@ -71,7 +71,7 @@ const Hero = () => {
               >
                 👋
               </motion.div>
-              Hi I&apos;m
+              Hi, I&apos;m
             </span>
             Lu Liu
           </motion.h2>

@@ -66,10 +66,10 @@ const Contact = () => {
           <h2>Address</h2>
           <span>Brisbane Australia</span>
         </motion.div>
-        <motion.div className="item" variants={variants}>
+        {/* <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
           <span>+61 416 821 543</span>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
       <div className="formContainer">
         <motion.div
