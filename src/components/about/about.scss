@@ -1,0 +1,63 @@
+@import "../../app.scss";
+
+.about{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 150px;
+    background: linear-gradient(180deg, #111132, #0c0c1d);
+    overflow: hidden;
+
+    @include mobile {
+        flex-direction: column;
+        gap:0;
+        padding: 20px;
+    }
+
+    .textContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex:1;
+        padding: 20px;
+
+        @include mobile {
+            // justify-content: flex-end;
+            padding: 0;
+          }
+        h1{
+            font-size: 64px;
+            padding-bottom: 20px;
+            @include mobile {
+                font-size: 36px;
+            }
+        }
+        p{
+            font-size: 20px;
+            color: lightgray;
+            letter-spacing: 1px;
+
+            @include mobile {
+                font-size: 16px;
+              }
+
+            b{
+                color:rebeccapurple;
+            }
+
+            a{
+                color: orange;
+            }
+
+            span{
+                color: orange;
+            }
+        }  
+    }
+
+}

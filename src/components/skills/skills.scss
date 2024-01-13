@@ -1,0 +1,55 @@
+@import "../../app.scss";
+
+.skillsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:1;
+    margin: auto;
+
+    h1{
+        font-size: 64px;
+        padding-bottom: 30px;
+        @include mobile {
+            font-size: 36px;
+        }
+    }
+
+    ul{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap; 
+        gap:40px;
+        list-style: none;
+
+        @include mobile {
+            width: 60%;
+
+        }
+
+        li{
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            
+            svg {
+                width: 50px; /* 设置默认图标宽度 */
+                height: 50px; /* 设置默认图标高度 */
+
+                @include mobile {
+                    width: 30px;
+                    height: 30px;
+
+                }
+                
+            }
+            @include mobile {
+                width: 30px;
+                height: 30px;
+                font-size: 12px;
+            }
+        }
+        
+    }
+}
+
