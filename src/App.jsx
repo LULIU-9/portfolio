@@ -9,23 +9,19 @@ import Skills from "./components/skills/Skills";
 const App = () => {
   return (
     <div>
-      <section id="homepage">
+      <section id="homepage" className="heroContainer">
         <Navbar />
         <Hero />
       </section>
-      <section id="about">
-        <About />
-      </section>
-      <section id="skills">
-        <Skills />
-      </section>
-      {/* <section id="projects">
-        <Projects />
-      </section> */}
-      <Portfolio />
+
+      <About />
+
+      {/* <Skills /> */}
+
+      {/* <Portfolio />
       <section id="contact">
         <Contact />
-      </section>
+      </section> */}
     </div>
   );
 };
