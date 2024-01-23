@@ -54,7 +54,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
       <div className="wrapper">
         <motion.div
           className="textContainer"
