@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
+import { LuDownload, LuDownloadCloud } from "react-icons/lu";
+import "./links.scss";
 
 const variants = {
   open: {
@@ -31,7 +34,7 @@ const Links = () => {
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
         <motion.a
-          href={`#${item}`}
+          href={`#${item.toLocaleLowerCase()}`}
           key={item}
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
@@ -40,6 +43,19 @@ const Links = () => {
           {item}
         </motion.a>
       ))}
+      <div className="social">
+        <div className="wrap">
+          <a href="https://github.com/LULIU-9">
+            <FaGithubAlt size={20} />
+          </a>
+          <a href="https://www.linkedin.com/in/lu-liu-232983199">
+            <FaLinkedinIn size={20} />
+          </a>
+        </div>
+        <a href="#contact">
+          My resumé <LuDownloadCloud />
+        </a>
+      </div>
     </motion.div>
   );
 };

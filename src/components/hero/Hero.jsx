@@ -39,22 +39,8 @@ const sliderVariants = {
 };
 
 const Hero = () => {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-
-    link.href = "/LuLiu_CV.pdf";
-
-    link.download = "LuLiu_CV.pdf";
-
-    document.body.appendChild(link);
-
-    link.click();
-
-    document.body.removeChild(link);
-  };
-
   return (
-    <div className="hero" id="hero">
+    <div className="hero" id="home">
       <div className="wrapper">
         <motion.div
           className="textContainer"
@@ -84,9 +70,11 @@ const Hero = () => {
                 See the Latest Works
               </motion.button>
             </a>
-            <motion.button variants={textVariants} onClick={handleDownload}>
-              Download My CV <LuDownload />
-            </motion.button>
+            <a href="#contact">
+              <motion.button variants={textVariants}>
+                Contact Me Now
+              </motion.button>
+            </a>
           </motion.div>
           <a href="#about">
             <motion.img

@@ -4,8 +4,22 @@ import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
+import { LuDownload } from "react-icons/lu";
 
 const Navbar = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+
+    link.href = "/LuLiu_CV.pdf";
+
+    link.download = "LuLiu_CV.pdf";
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+  };
   return (
     <div className="navbar">
       <Sidebar />
@@ -22,10 +36,10 @@ const Navbar = () => {
           LU.
         </div>
         <div className="nav">
-          <a href="#hero">Home</a>
+          <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
-          <a href="#portfolio">Projects</a>
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
         <div className="social">
@@ -34,6 +48,11 @@ const Navbar = () => {
           </a>
           <a href="https://www.linkedin.com/in/lu-liu-232983199">
             <FaLinkedin size={20} />
+          </a>
+          <a href="#contact">
+            <button onClick={handleDownload}>
+              My resumé <LuDownload />
+            </button>
           </a>
         </div>
       </motion.div>

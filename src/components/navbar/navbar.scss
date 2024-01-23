@@ -58,6 +58,16 @@
         color: white;
         cursor: pointer;
         font-weight: 300;
+
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+
+        &:active {
+          background-color: #ddd;
+          color: #666;
+        }
       }
     }
   }

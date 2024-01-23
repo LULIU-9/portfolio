@@ -1,0 +1,11 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  .wrap {
+    display: flex;
+    gap: 10px;
+  }
+}

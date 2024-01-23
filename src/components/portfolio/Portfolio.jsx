@@ -72,7 +72,7 @@ const Portfolio = () => {
   const ref = useRef();
 
   return (
-    <div className="portfolio" ref={ref} id="portfolio">
+    <div className="portfolio" ref={ref} id="projects">
       <h1>Featured Works</h1>
       {items.map((item) => (
         <Single item={item} key={item.id} />
