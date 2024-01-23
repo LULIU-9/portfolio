@@ -23,11 +23,10 @@ const items = [
   },
   {
     id: 3,
-    title: "📖Tao Talk",
-    img: "/taotalk.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    demo: "https://taotalk.vercel.app/",
-    github: "https://github.com/taodemy/taotalk",
+    title: "🎵Taotify(In progress)",
+    img: "/taotify.png",
+    desc: "Music player application in development",
+    demo: "https://app.taotify.com/",
   },
 ];
 
@@ -47,21 +46,22 @@ const Single = ({ item }) => {
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{ y }}>
+          <div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-
-            <a href={item.github}>
-              <button>
-                View Code <FaGithubAlt />
-              </button>
-            </a>
-            <a href={item.demo}>
-              <button>
-                See Demo <FaExternalLinkAlt />
-              </button>
-            </a>
-          </motion.div>
+            <div className="buttons">
+              <a href={item.github}>
+                <button>
+                  View Code <FaGithubAlt />
+                </button>
+              </a>
+              <a href={item.demo}>
+                <button>
+                  See Demo <FaExternalLinkAlt />
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -71,23 +71,9 @@ const Single = ({ item }) => {
 const Portfolio = () => {
   const ref = useRef();
 
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["end end", "start start"],
-  });
-
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-  });
-
   return (
-    <div className="portfolio" ref={ref}>
-      {/* <div className="progress">
-        <h1>Featured Works</h1> */}
-      {/* <motion.div style={{ scaleX }} className="progressBar"></motion.div> */}
-      {/* </div> */}
-
+    <div className="portfolio" ref={ref} id="portfolio">
+      <h1>Featured Works</h1>
       {items.map((item) => (
         <Single item={item} key={item.id} />
       ))}

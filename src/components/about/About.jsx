@@ -14,7 +14,7 @@ const variants = {
 
 const AboutMe = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div>
         <motion.h1 variants={variants} initial="initial" whileInView="animate">
           About Me

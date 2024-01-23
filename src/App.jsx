@@ -16,12 +16,10 @@ const App = () => {
 
       <About />
 
-      {/* <Skills /> */}
+      <Skills />
 
-      {/* <Portfolio />
-      <section id="contact">
-        <Contact />
-      </section> */}
+      <Portfolio />
+      <Contact />
     </div>
   );
 };

@@ -2,105 +2,129 @@
 
 .portfolio {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  gap: 100px;
 
-  .progress {
-    position: sticky;
-    top: 0;
-    left: 0;
-    padding-top: 50px;
-    text-align: center;
-    color: orange;
-    font-size: 36px;
+  @include tablet {
+    padding: 50px;
+  }
 
+  @include mobile {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 64px;
     @include mobile {
-      padding-top: calc(100vh - 100px);
-      font-size: 24px;
-    }
-
-    .progressBar {
-      height: 10px;
-      background-color: white;
+      font-size: 36px;
     }
   }
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  section {
+    // width: 80%;
 
-    .wrapper {
-      max-width: 1366px;
-      height: 100%;
-      margin: auto;
+    @include mobile {
+      // width: 100%;
+    }
+    .container {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 50px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
 
-      @include mobile {
-        flex-direction: column;
-      }
-
-      .imageContainer {
-        flex: 1;
-        height: 50%;
-
-        @include mobile {
-          width: 100%;
-          max-height: 300px;
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-
-          @include mobile {
-            object-fit: contain;
-          }
-        }
-      }
-
-      .textContainer {
-        flex: 1;
+      .wrapper {
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
         display: flex;
-        flex-direction: column;
-        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
 
         @include mobile {
-          transform: none !important;
-          padding: 10px;
-          align-items: center;
-          text-align: center;
+          flex-direction: column;
+          border-bottom: 1px solid white;
         }
 
-        h2 {
-          font-size: 72px;
+        .imageContainer {
+          flex: 1;
+          height: 50%;
 
           @include mobile {
+            width: 100%;
+            // max-height: 300px;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+
+            @include mobile {
+              object-fit: contain;
+            }
+          }
+        }
+
+        .textContainer {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+          @include mobile {
+            transform: none !important;
+            padding: 10px;
+            align-items: center;
+            text-align: center;
+          }
+
+          h2 {
             font-size: 36px;
+
+            @include tablet {
+              font-size: 28px;
+            }
+
+            @include mobile {
+              font-size: 24px;
+            }
           }
-        }
 
-        p {
-          color: gray;
-          font-size: 20px;
+          p {
+            color: gray;
+            font-size: 20px;
 
-          @include mobile {
-            font-size: 16px;
+            @include mobile {
+              font-size: 16px;
+            }
+            @include mobile {
+              font-size: 12px;
+            }
           }
-        }
 
-        button {
-          background-color: orange;
-          border: none;
-          border-radius: 10px;
-          padding: 10px;
-          width: 200px;
-          cursor: pointer;
+          .buttons {
+            display: flex;
+            gap: 20px;
+            @include mobile {
+              flex-direction: column;
+            }
+            button {
+              background-color: orange;
+              border: none;
+              border-radius: 10px;
+              padding: 10px;
+              width: 200px;
+              cursor: pointer;
+            }
+          }
         }
       }
     }

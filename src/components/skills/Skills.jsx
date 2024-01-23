@@ -62,7 +62,7 @@ const variants = {
 
 const Skills = () => {
   return (
-    <div className="skills">
+    <section className="skills" id="skills">
       <div className="wrapper">
         <motion.h1 variants={variants} initial="initial" whileInView="animate">
           Skills
@@ -86,7 +86,7 @@ const Skills = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

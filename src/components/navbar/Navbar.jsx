@@ -28,7 +28,7 @@ const Navbar = () => {
           <a href="https://www.linkedin.com/in/lu-liu-232983199">
             <FaLinkedin size={20} />
           </a>
-          <a href="#Contact">
+          <a href="#contact">
             <button>Contact Me</button>
           </a>
         </div>

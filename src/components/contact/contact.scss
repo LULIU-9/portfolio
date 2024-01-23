@@ -7,6 +7,11 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  padding: 100px;
+
+  @include tablet {
+    padding: 50px;
+  }
 
   @include mobile {
     width: 100%;
@@ -29,8 +34,12 @@
     }
 
     h1 {
-      font-size: 100px;
+      font-size: 72px;
       line-height: 88px;
+
+      @include tablet {
+        font-size: 64px;
+      }
 
       @include mobile {
         font-size: 36px;
@@ -45,12 +54,11 @@
   .formContainer {
     flex: 1;
     position: relative;
-    
+
     @include mobile {
       padding: 50px;
       width: 100%;
     }
-
 
     .phoneSvg {
       stroke: orange;

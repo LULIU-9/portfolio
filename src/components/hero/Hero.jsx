@@ -79,7 +79,7 @@ const Hero = () => {
             Front End and Full Stack developer
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <a href="#Portfolio">
+            <a href="#portfolio">
               <motion.button variants={textVariants}>
                 See the Latest Works
               </motion.button>
@@ -88,7 +88,7 @@ const Hero = () => {
               Download My CV <LuDownload />
             </motion.button>
           </motion.div>
-          <a href="#About">
+          <a href="#about">
             <motion.img
               variants={textVariants}
               animate="scrollButton"
