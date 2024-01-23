@@ -8,6 +8,7 @@
   justify-content: center;
   padding: 100px;
   gap: 100px;
+  background: linear-gradient(180deg, #111132, #0c0c1d);
 
   @include tablet {
     padding: 50px;
