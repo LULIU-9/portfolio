@@ -1,8 +1,7 @@
+import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { FaExternalLinkAlt, FaGithubAlt } from "react-icons/fa";
 import "./portfolio.scss";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { FaGithubAlt } from "react-icons/fa";
 
 const items = [
   {

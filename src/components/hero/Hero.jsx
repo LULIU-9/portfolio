@@ -1,6 +1,5 @@
-import "./hero.scss";
 import { motion } from "framer-motion";
-import { LuDownload } from "react-icons/lu";
+import "./hero.scss";
 
 const textVariants = {
   initial: {

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
-import { LuDownload, LuDownloadCloud } from "react-icons/lu";
+import { LuDownloadCloud } from "react-icons/lu";
 import "./links.scss";
 
 const variants = {
