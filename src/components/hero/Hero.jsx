@@ -64,7 +64,7 @@ const Hero = () => {
             Front End and Full Stack developer
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <a href="#portfolio">
+            <a href="#projects">
               <motion.button variants={textVariants}>
                 See the Latest Works
               </motion.button>
